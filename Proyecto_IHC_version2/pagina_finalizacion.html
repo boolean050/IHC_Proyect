@@ -5,17 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/finalizacion.css">
+    <link rel="stylesheet" href="css/recarga-tarjeta.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Recarga</title>
+    <script>
+        function redirigirpagina(pagina, event){
+            event.preventDefault();
+            window.Location.herf = pagina;
+        }
+    </script>
 </head>
 <body>
    <div class="Login">
         <form action="pagina_IHC.html">
                 <h2>Hola!<br><span>La recarga ya esta en tu tarjeta!</span></h2>
 
-                <div class="InputBox">
-                    <input type="submit" value="Regresar" name="Regresar">
+                <div class="inputBox">
+                    <input type="button" value="Regresar" name="Regresar" onclick="redirigirpagina('pagina_IHC.html', event)">
                 </div>
         </form>
    </div>
